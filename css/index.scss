@@ -1,0 +1,359 @@
+$theme-color:#0094ff;
+
+.theme-color {
+	color: #0094ff;
+}
+
+// 公共标题
+.title {
+	padding-bottom: 20px;
+
+	.line {
+		margin: 22px auto;
+		width: 0px;
+		border-bottom: 3px solid $theme-color;
+		transition: width .3s;
+	}
+}
+
+.title:hover {
+	.line {
+		width: 16%;
+	}
+}
+// 顶部导航
+#my_nav {
+	.navbar-default {
+		border-color: transparent
+	}
+
+	.navbar {
+		padding: 10px 0;
+		margin-bottom: 0;
+		background-color: rgba(255, 255, 255, .1);
+
+		a {
+			color: #000;
+		}
+
+		a:hover,
+		a:focus {
+			color: $theme-color
+		}
+	}
+}
+
+// 中部图片区域
+#bg {
+	position: relative;
+	height: 600px;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+
+	.box {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 80%;
+		height: 50%;
+		margin: auto;
+
+		.bg-title {
+			font-size: 36px;
+			font-weight: 700;
+			color: #fff;
+		}
+
+		.line {
+			width: 8%;
+			margin: 20px auto;
+			border-bottom: 2px solid $theme-color;
+		}
+
+		p {
+			color: #ddd;
+		}
+
+		.btn {
+			width: 70px;
+			height: 70px;
+			margin-top: 60px;
+			padding: 7px 16px;
+			border: 2px solid rgba(255, 255, 255, .2);
+			border-radius: 100% !important;
+			font-size: 40px;
+			transition: background .4s ease-in-out;
+		}
+
+		i {
+			transition: transform .5s;
+		}
+
+		.btn:hover {
+			background: rgba(255, 255, 255, .1);
+
+			i {
+				transform: scale(1.5);
+				color: $theme-color;
+			}
+		}
+	}
+
+}
+
+// 基本资料
+#services {
+	padding: 50px 0;
+	background: linear-gradient(rgb(111, 114, 117) 0%, rgb(49, 53, 58) 100%);
+	color: rgb(221, 221, 221);
+
+	i.fa {
+		font-size: 50px;
+		width: 120px;
+		height: 120px;
+		margin-bottom: 10px;
+		color: rgb(170, 170, 170);
+		padding: 34px 0px;
+		border-radius: 50%;
+		background: rgb(71, 75, 79);
+		transition: all 0.5s ease-out 0s;
+	}
+
+	i.fa:hover {
+		transform: scale(1.2);
+		color: $theme-color;
+	}
+}
+
+// 项目经历
+#works {
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+
+// 专业技能
+#about {
+	padding: 50px 0;
+	background-color: #00a2ff;
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	p {
+		margin-bottom: 10px;
+		color: #222;
+		font-size: 20px;
+	}
+}
+
+// 工作经历
+#team {
+	padding: 50px 0;
+	background: linear-gradient(white, #ccc);
+
+	.team-main {
+		padding-bottom: 28px;
+	}
+
+	.thumbnail {
+		background: transparent;
+		border: none;
+
+		img {
+			width: 120px;
+			height: 120px;
+			border: 4px solid transparent;
+			transition: all 0.5s;
+		}
+
+		img:hover {
+			border: 4px solid $theme-color;
+		}
+
+		h4 {
+			font-weight: 700;
+			color: #333;
+		}
+	}
+}
+
+// 自我评价
+#testimonials {
+	color: #fff;
+	background: url(../images/my.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 80px 0;
+
+	p {
+		font-size: 16px;
+	}
+
+	// 更改索引圆点的位置
+	@media screen and (min-width: 768px) {
+		.carousel-indicators {
+			bottom: -60px;
+		}
+	}
+
+	.carousel-indicators {
+		bottom: -50px;
+
+		li {
+			border: 1px solid $theme-color;
+		}
+
+		li.active {
+			background-color: $theme-color;
+		}
+	}
+}
+
+// 联系方式
+#contact {
+	padding: 50px 0;
+	background: linear-gradient(#fff, #ccc);
+
+	i {
+		color: $theme-color;
+		padding-bottom: 10px;
+	}
+}
+
+// 底部内容
+.foot {
+	padding: 20px 0;
+	background-color: #000;
+	color: $theme-color;
+}
+// 返回顶部按钮
+.totop{
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-color: #333;
+	position:fixed;
+	display:none;
+	bottom:80px;
+	right:16px;
+	border-radius: 8px;
+	i{
+		font-size: 40px;
+	}
+}
+
+// 项目tab栏
+.demo {
+	padding: 2em 0;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.tab .nav-tabs {
+	padding-left: 15px;
+	border-bottom: 4px solid $theme-color;
+}
+
+.tab .nav-tabs li a {
+	color: #fff;
+	padding: 10px 10px;
+	margin-right: 10px;
+	background: $theme-color;
+	text-shadow: 1px 1px 2px #000;
+	border: none;
+	border-radius: 0;
+	opacity: 0.5;
+	position: relative;
+	transition: all 0.3s ease 0s;
+}
+
+.tab .nav-tabs li a:hover {
+	background: $theme-color;
+	opacity: 0.8;
+}
+
+.tab .nav-tabs li.active a {
+	opacity: 1;
+}
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover,
+.tab .nav-tabs li.active a:focus {
+	color: #fff;
+	background: $theme-color;
+	border: none;
+	border-radius: 0;
+}
+
+.tab .nav-tabs li a:before,
+.tab .nav-tabs li a:after {
+	content: "";
+	border-top: 42px solid transparent;
+	position: absolute;
+	top: -2px;
+}
+
+.tab .nav-tabs li a:before {
+	border-right: 15px solid $theme-color;
+	left: -15px;
+}
+
+.tab .nav-tabs li a:after {
+	border-left: 15px solid $theme-color;
+	right: -15px;
+}
+
+.tab .nav-tabs li a i,
+.tab .nav-tabs li.active a i {
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 15px;
+	text-shadow: none;
+}
+
+.tab .nav-tabs li a span {
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: -9px;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.tab .nav-tabs li a:hover span,
+.tab .nav-tabs li.active a span {
+	letter-spacing: 1px;
+	opacity: 1;
+	transition: all 0.3s ease 0s;
+}
+
+.tab .tab-content {
+	padding: 30px 16px;
+	background: #f7f7f7
+}
+
+.tab .tab-content h3 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 479px) {
+	.tab .nav-tabs li {
+		width: 100%;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	.tab .nav-tabs li a span {
+		letter-spacing: 1px;
+		opacity: 1;
+	}
+}

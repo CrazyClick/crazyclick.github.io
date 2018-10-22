@@ -1,0 +1,357 @@
+.theme-color {
+  color: #0094ff;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.title .line {
+  margin: 22px auto;
+  width: 0px;
+  border-bottom: 3px solid #0094ff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.title:hover .line {
+  width: 16%;
+}
+
+#my_nav .navbar-default {
+  border-color: transparent;
+}
+
+#my_nav .navbar {
+  padding: 10px 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#my_nav .navbar a {
+  color: #000;
+}
+
+#my_nav .navbar a:hover,
+#my_nav .navbar a:focus {
+  color: #0094ff;
+}
+
+#bg {
+  position: relative;
+  height: 600px;
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#bg .box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+}
+
+#bg .box .bg-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#bg .box .line {
+  width: 8%;
+  margin: 20px auto;
+  border-bottom: 2px solid #0094ff;
+}
+
+#bg .box p {
+  color: #ddd;
+}
+
+#bg .box .btn {
+  width: 70px;
+  height: 70px;
+  margin-top: 60px;
+  padding: 7px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100% !important;
+  font-size: 40px;
+  -webkit-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
+}
+
+#bg .box i {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#bg .box .btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#bg .box .btn:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #0094ff;
+}
+
+#services {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6f7275), to(#31353a));
+  background: linear-gradient(#6f7275 0%, #31353a 100%);
+  color: #dddddd;
+}
+
+#services i.fa {
+  font-size: 50px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+  padding: 34px 0px;
+  border-radius: 50%;
+  background: #474b4f;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+#services i.fa:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #0094ff;
+}
+
+#works {
+  padding: 50px 0;
+  background: #f7f7f7;
+}
+
+#about {
+  padding: 50px 0;
+  background-color: #00a2ff;
+}
+
+#about img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#about p {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 20px;
+}
+
+#team {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ccc));
+  background: linear-gradient(white, #ccc);
+}
+
+#team .team-main {
+  padding-bottom: 28px;
+}
+
+#team .thumbnail {
+  background: transparent;
+  border: none;
+}
+
+#team .thumbnail img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#team .thumbnail img:hover {
+  border: 4px solid #0094ff;
+}
+
+#team .thumbnail h4 {
+  font-weight: 700;
+  color: #333;
+}
+
+#testimonials {
+  color: #fff;
+  background: url(../images/my.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+}
+
+#testimonials p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  #testimonials .carousel-indicators {
+    bottom: -60px;
+  }
+}
+
+#testimonials .carousel-indicators {
+  bottom: -50px;
+}
+
+#testimonials .carousel-indicators li {
+  border: 1px solid #0094ff;
+}
+
+#testimonials .carousel-indicators li.active {
+  background-color: #0094ff;
+}
+
+#contact {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+  background: linear-gradient(#fff, #ccc);
+}
+
+#contact i {
+  color: #0094ff;
+  padding-bottom: 10px;
+}
+
+.foot {
+  padding: 20px 0;
+  background-color: #000;
+  color: #0094ff;
+}
+
+.totop {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: #333;
+  position: fixed;
+  display: none;
+  bottom: 80px;
+  right: 16px;
+  border-radius: 8px;
+}
+
+.totop i {
+  font-size: 40px;
+}
+
+.demo {
+  padding: 2em 0;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.tab .nav-tabs {
+  padding-left: 15px;
+  border-bottom: 4px solid #0094ff;
+}
+
+.tab .nav-tabs li a {
+  color: #fff;
+  padding: 10px 10px;
+  margin-right: 10px;
+  background: #0094ff;
+  text-shadow: 1px 1px 2px #000;
+  border: none;
+  border-radius: 0;
+  opacity: 0.5;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tab .nav-tabs li a:hover {
+  background: #0094ff;
+  opacity: 0.8;
+}
+
+.tab .nav-tabs li.active a {
+  opacity: 1;
+}
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover,
+.tab .nav-tabs li.active a:focus {
+  color: #fff;
+  background: #0094ff;
+  border: none;
+  border-radius: 0;
+}
+
+.tab .nav-tabs li a:before,
+.tab .nav-tabs li a:after {
+  content: "";
+  border-top: 42px solid transparent;
+  position: absolute;
+  top: -2px;
+}
+
+.tab .nav-tabs li a:before {
+  border-right: 15px solid #0094ff;
+  left: -15px;
+}
+
+.tab .nav-tabs li a:after {
+  border-left: 15px solid #0094ff;
+  right: -15px;
+}
+
+.tab .nav-tabs li a i,
+.tab .nav-tabs li.active a i {
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 15px;
+  text-shadow: none;
+}
+
+.tab .nav-tabs li a span {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: -9px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tab .nav-tabs li a:hover span,
+.tab .nav-tabs li.active a span {
+  letter-spacing: 1px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tab .tab-content {
+  padding: 30px 16px;
+  background: #f7f7f7;
+}
+
+.tab .tab-content h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .tab .nav-tabs li {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .tab .nav-tabs li a span {
+    letter-spacing: 1px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
