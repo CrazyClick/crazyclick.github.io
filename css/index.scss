@@ -3,7 +3,9 @@ $theme-color:#0094ff;
 .theme-color {
 	color: #0094ff;
 }
-
+body{
+	position: relative;;
+}
 // 公共标题
 .title {
 	padding-bottom: 20px;
@@ -31,14 +33,17 @@ $theme-color:#0094ff;
 		padding: 10px 0;
 		margin-bottom: 0;
 		background-color: rgba(255, 255, 255, .1);
-
 		a {
-			color: #000;
+			color: #fff;
 		}
 
 		a:hover,
 		a:focus {
 			color: $theme-color
+		}
+		.active a {
+			background-color: transparent;
+			color:$theme-color;
 		}
 	}
 }

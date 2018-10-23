@@ -2,6 +2,10 @@
   color: #0094ff;
 }
 
+body {
+  position: relative;
+}
+
 .title {
   padding-bottom: 20px;
 }
@@ -29,11 +33,16 @@
 }
 
 #my_nav .navbar a {
-  color: #000;
+  color: #fff;
 }
 
 #my_nav .navbar a:hover,
 #my_nav .navbar a:focus {
+  color: #0094ff;
+}
+
+#my_nav .navbar .active a {
+  background-color: transparent;
   color: #0094ff;
 }
 

@@ -30,18 +30,12 @@ $(function () {
         'backgroundColor': 'black',
         'padding': 0
       })
-      $('.navbar ul a').css({
-        'color': '#0094ff',
-      })
       // 显示返回顶部按钮
       $(".totop").stop().fadeIn(1200)
     } else {
       $('.navbar').css({
         'backgroundColor': "rgba(255, 255, 255, .2)",
         'padding': '10px 0'
-      })
-      $('.navbar ul a').css({
-        'color': '#000',
       })
       // 隐藏返回顶部按钮
       $(".totop").stop().fadeOut(1000)
@@ -59,4 +53,11 @@ $(function () {
       });
     }
   })
+// 点击导航过渡到相对应区域并路径不变
+  $('#my_nav a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    })
 })
