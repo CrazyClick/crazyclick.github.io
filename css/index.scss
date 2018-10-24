@@ -3,9 +3,12 @@ $theme-color:#0094ff;
 .theme-color {
 	color: #0094ff;
 }
-body{
-	position: relative;;
+
+body {
+	position: relative;
+	;
 }
+
 // 公共标题
 .title {
 	padding-bottom: 20px;
@@ -23,6 +26,7 @@ body{
 		width: 16%;
 	}
 }
+
 // 顶部导航
 #my_nav {
 	.navbar-default {
@@ -33,6 +37,7 @@ body{
 		padding: 10px 0;
 		margin-bottom: 0;
 		background-color: rgba(255, 255, 255, .1);
+
 		a {
 			color: #fff;
 		}
@@ -41,9 +46,10 @@ body{
 		a:focus {
 			color: $theme-color
 		}
+
 		.active a {
 			background-color: transparent;
-			color:$theme-color;
+			color: $theme-color;
 		}
 	}
 }
@@ -153,6 +159,11 @@ body{
 		margin-bottom: 10px;
 		color: #222;
 		font-size: 20px;
+		transition: transform 1s ease;
+	}
+
+	p:hover {
+		transform: translateX(30px)
 	}
 }
 
@@ -168,22 +179,33 @@ body{
 	.thumbnail {
 		background: transparent;
 		border: none;
+		border-radius: 18px;
+		transition: all 1s ease;
+	}
+
+	.thumbnail:hover {
+		box-shadow: 0px 26px 38px rgba(26, 39, 99, 0.5);
+		transform: translateY(-10px);
 
 		img {
-			width: 120px;
-			height: 120px;
-			border: 4px solid transparent;
-			transition: all 0.5s;
-		}
-
-		img:hover {
 			border: 4px solid $theme-color;
 		}
+	}
 
-		h4 {
-			font-weight: 700;
-			color: #333;
-		}
+	img {
+		width: 120px;
+		height: 120px;
+		border: 4px solid transparent;
+		transition: all 0.5s;
+	}
+
+	// img:hover {
+	// 	border: 4px solid $theme-color;
+	// }
+
+	h4 {
+		font-weight: 700;
+		color: #333;
 	}
 }
 
@@ -223,7 +245,14 @@ body{
 #contact {
 	padding: 50px 0;
 	background: linear-gradient(#fff, #ccc);
-
+	.item p{
+		transition: transform .5s;
+	}
+	.item:hover{
+		p{
+			transform: scale(1.2);
+		}
+	}
 	i {
 		color: $theme-color;
 		padding-bottom: 10px;
@@ -236,18 +265,20 @@ body{
 	background-color: #000;
 	color: $theme-color;
 }
+
 // 返回顶部按钮
-.totop{
+.totop {
 	display: block;
 	height: 40px;
 	width: 40px;
 	background-color: #333;
-	position:fixed;
-	display:none;
-	bottom:80px;
-	right:16px;
+	position: fixed;
+	display: none;
+	bottom: 80px;
+	right: 16px;
 	border-radius: 8px;
-	i{
+
+	i {
 		font-size: 40px;
 	}
 }
